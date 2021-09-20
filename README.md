@@ -1,10 +1,6 @@
 # Introduction 
 As per WHO , Drowning is a serious and neglected public health threat claiming the lives of 372 000 people a year worldwide. More than 90% of these deaths occur in low- and middle-income countries. This death toll is almost two thirds that of malnutrition and well over half that of malaria but unlike these public health challenges, there are no broad prevention efforts that target drowning. 
 
-Refer to the SRS Documentation of this Project using the Link below - 
-
-https://github.com/ria-2511/Smart-Lifeguard/blob/main/404_DrowningNotFound%20(1).pdf
-
 ## Goal 
 An efficient and enhanced software tool for detecting well before the person is in danger of drowning by measure of person’s heartbeat, blood pressure and oxygen concentration.
 
