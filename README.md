@@ -5,7 +5,7 @@ As per WHO , Drowning is a serious and neglected public health threat claiming t
 An efficient and enhanced software tool for detecting well before the person is in danger of drowning by measure of person’s heartbeat, blood pressure and oxygen concentration.
 
 ## Software Overview 
-* Our software consist of a model that takes certain values such as Heart beat , Systolic Blood pressure, Diastolic Blood pressure & SP02 values as input.
+* My software consists of a model that takes certain values such as Heart beat , Systolic Blood pressure, Diastolic Blood pressure & SP02 values as input.
 * On the basis of certain threshold values it evaluate, that a person has a higher probability of drowning.
 * An alert is sent to the lifeguard along with the position of the drowning victim through the GPS.
 
@@ -19,13 +19,13 @@ Used to detect people in danger of drowning through their heartbeats , systolic 
 * Alerts are sent to the lifeguard for the people with high drowning probability.
 
 ## Working of the Drowning Machine Learning Model Below 
-* We couldn't find an appropriate dataset online so we created our own using a random number generator and generating values for the coloumns with their respective ranges according to the medical facts.
-* Then we have split the dataset with a 20% ratio of Testing data and 80% ratio of Training data .
-* We have applied SVM to Predict the values of the dataset and to classify whether they fall into the category of drowning or not. 
-* Whatever values we enter into our Interface , that is transferred to our model using FLASK. And then flask further tranfers the output given by the model to the interface and the final result is displayed.
+* I consulted the nearby Doctors and Hospitals to get full knowledge about the factors that determine when and how a person is in danger of drowning, Factors such as Heratbeat , Blood Pressure etc. Using this Info , I proceded to create my own dataset for the model.
+* Then I have split the dataset with a 20% ratio of Testing data and 80% ratio of Training data .
+* I have applied SVM to Predict the values of the dataset and to classify whether they fall into the category of drowning or not. 
+* Whatever values I enter into our Interface , that is transferred to our model using FLASK. And then flask further tranfers the output given by the model to the interface and the final result is displayed.
 
 ## Algorithm Definition 
-The Algo we have used here is SVM. “Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well. 
+The Algo I have used here is SVM. “Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, I plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, I perform classification by finding the hyper-plane that differentiates the two classes very well. 
 
 <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/10/SVM_21.png">
 
@@ -38,7 +38,7 @@ Now consider the Planes below . Here all of them divide the set perfectly. So we
 Above, you can see that the margin for hyper-plane C is high as compared to both A and B. Hence, we name the right hyper-plane as C. Another lightning reason for selecting the hyper-plane with higher margin is robustness. If we select a hyper-plane having low margin then there is high chance of miss-classification.
 
 ### SVM Parameters 
-#### 1. Kernel ( TO EDIT )
+#### 1. Kernel 
 #### 2. Gamma 
 Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Higher the value of gamma, will try to exact fit the as per training data set i.e. generalization error and cause over-fitting problem.
 Example: Let’s difference if we have gamma different gamma values like 0, 10 or 100.
@@ -52,10 +52,10 @@ Penalty parameter C of the error term. It also controls the trade-off between sm
 
 <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/10/SVM_18.png">
 
-We should always look at the cross-validation score to have effective combination of these parameters and avoid over-fitting.
+I should always look at the cross-validation score to have effective combination of these parameters and avoid over-fitting.
 
 ## Results 
-We created a model using SVM with an overall accuracy of 91.2%.
+I created a model using SVM with an overall accuracy of 91.2%.
 
 # Bibliography 
 * https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/#:~:text=%E2%80%9CSupport%20Vector%20Machine%E2%80%9D%20(SVM,mostly%20used%20in%20classification%20problems.
