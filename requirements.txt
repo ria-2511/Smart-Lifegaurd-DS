@@ -2,3 +2,4 @@ charset-normalizer==2.0.6
 idna==3.2
 urllib3==1.26.6
 Flask==1.1.2
+opencv-python-headless==4.5.1.48
