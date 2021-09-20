@@ -1,3 +1,0 @@
-charset-normalizer==2.0.6
-idna==3.2
-urllib3==1.26.6
